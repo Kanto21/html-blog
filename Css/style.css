@@ -1,0 +1,82 @@
+body{
+    margin:10 px 80px;
+
+}
+
+nav {
+    display: flex;
+    flex-wrap:wrap ;
+    justify-content: space-between;;
+}
+
+nav h1{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 30px;
+    color:rgb(173, 24, 54);
+    text-align: center ;
+}
+nav .onglets{
+    margin-top: 30px;
+}
+nav .onglets a{
+    text-decoration: none;
+    color: #7f7e7e;
+    margin-right: 5px;
+}
+.articles{
+    margin-top: 30px;
+
+}
+.articles .article{
+    display: flex;
+    flex-wrap:wrap;
+    margin-bottom: 30px;
+}
+.articles .article .left img{
+    height: 300px;
+    width: 500px;
+}
+.articles .article .right{
+    max-width: 50%;
+    margin-left: 40px;
+}
+.articles .article .right p.date{
+    color: #7f7e7e;
+}
+.articles .article .right p.description{
+    color: #130d0d;
+}
+.articles .article h1{
+    color: #f80101;
+}
+.articles .article .auteur{
+    color: #0e9cd4cc;
+}
+footer{
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    color: #494949;
+}
+footer h2{
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+@media screen and (maw-width:640px){
+    body{
+        margin: 10px 20 px;
+    }
+    nav .onglets{
+        margin-top: -10px;
+    }
+    .articles .article .left img{
+        height: 100%;
+        width: 100%;
+    }
+    .articles .article .right{
+        margin:0;
+        max-width: 100%;
+    }
+}
